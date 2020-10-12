@@ -1,0 +1,14 @@
+version: "3"
+services:
+  saas:
+    #image: "node:14-buster"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: "/srv/saas/app"
+    volumes:
+      - "${PWD}/app/:/srv/saas/app"
+      - "${PWD}/data/:/srv/saas/data"
+    ports:
+      - "3210:3210"
+    command: npm run init

@@ -1,0 +1,22 @@
+{
+  "name": "screenshot-as-a-service",
+  "version": "0.0.1",
+  "description": "Screenshot as a service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "init": "npm i --no-fund && node index.js"
+  },
+  "keywords": [
+    "screenshot as a service",
+    "saas"
+  ],
+  "author": "Nicolas Borboën <ponsfrilus@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^5.3.1",
+    "tld-extract": "^2.0.0"
+  }
+}
